@@ -6,7 +6,7 @@
 /*   By: mmovahhe <mmovahhe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/04 17:00:17 by mmovahhe          #+#    #+#             */
-/*   Updated: 2018/12/15 23:00:12 by mmovahhe         ###   ########.fr       */
+/*   Updated: 2018/12/15 23:33:34 by mmovahhe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,8 @@ int			init_modif(t_args *args)
 		args->modif.color = 4;
 	else if (ft_strcmp(args->file, "test_maps/pyramide.fdf") == 0)
 		args->modif.color = 2;
-	else if (ft_strcmp(args->file, "test_maps/mars.fdf") == 0)
+	else if (ft_strcmp(args->file, "test_maps/test_maps/mars.fdf")
+			== 0)
 		args->modif.color = 1;
 	else
 		args->modif.color = 3;
