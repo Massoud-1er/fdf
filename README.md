@@ -1,6 +1,6 @@
-creenshot
+sreenshot
 
-![Alt text](/screens/France-fdf-screen.png?raw=true "Carte de la France Fdf")
+![Alt text](~/Desktop/France-fdf-screen.png?raw=true "Carte de la France Fdf")
 
 A 3D height-map renderer made with the school graphical library minilibx
 
