@@ -6,7 +6,8 @@
 /*   By: mmovahhe <mmovahhe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/04 17:00:17 by mmovahhe          #+#    #+#             */
-/*   Updated: 2018/12/15 23:33:34 by mmovahhe         ###   ########.fr       */
+/*   Updated: 2019/02/17 20:50:48 by mmovahhe         ###   ########.fr       */
+/*   Updated: 2018/12/15 23:00:12 by mmovahhe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,18 +22,17 @@ int			init_modif(t_args *args)
 	args->modif.switch_proj = 1;
 	args->modif.color = 3;
 	args->modif.mirror = 1;
-	if (ft_strcmp(args->file, "test_maps/france.fdf") == 0)
+	if (ft_strcmp(args->file, "maps/france.fdf") == 0)
 		args->modif.color = 4;
-	else if (ft_strcmp(args->file, "test_maps/pyramide.fdf") == 0)
+	else if (ft_strcmp(args->file, "maps/pyramide.fdf") == 0)
 		args->modif.color = 2;
-	else if (ft_strcmp(args->file, "test_maps/test_maps/mars.fdf")
+	else if (ft_strcmp(args->file, "maps/test_maps/mars.fdf")
 			== 0)
 		args->modif.color = 1;
 	else
 		args->modif.color = 3;
 	return (1);
 }
-
 void		count_lines(char *file, int *x, int *y)
 {
 	int		fd;
@@ -76,7 +76,7 @@ int			main(int ac, char **av)
 	get_win_size(&args.win_x, &args.win_y);
 	args.mlx_ptr = mlx_init();
 	if (!(args.win_ptr = mlx_new_window(args.mlx_ptr,
-			args.win_x, args.win_y, "mlx 42")))
+					args.win_x, args.win_y, "mlx 42")))
 		put_exit_free(&args);
 	if (!(args.image = create_image(args)))
 		put_exit_free(&args);
